@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# ignore sub-folders in "data" and all .db files
+data/*
+data/training_set/*
+*.csv
+*.parquet
+*.db
+
+# ignore sub-folders in "results"
+results/*
