@@ -31,9 +31,9 @@ data/training_set/20180918/
 ## Run an Experiment
 Having now completed the prior step (**Data Preparation**), it is now possible to run experiments. This can be done via the following command:
 
-`python experiment.py --name All --type MyAllExperiment -l 20 --pca 7`
+`python experiment.py --name MyAllExperiment --type all -l 20 --pca 7`
 
-This will create an experiment in `results`, named `MyAllExperiment`, with an `All` experimental condition (meaning all sessions and on all days), for listening sessions of length 20, and with 7 PCA components. Further, individual boxplots for each skipping types are generated and available in the `figures` sub-folder.
+This will create an experiment in `results`, named `MyAllExperiment`, with an `all` experimental condition (meaning all sessions and on all days), for listening sessions of length 20, and with 7 PCA components. Further, individual boxplots for each skipping types are generated and available in the `figures` sub-folder.
 
 The available experimental conditions flags are: _all_, _weekday_, _weekend_, _morning_, _afternoon_, _evening_, and _night_. Additionally, to perform an experiment on playlist types (e.g. editorial playlist), the array attribute `context_types` in `experiment.py` has to be modified accordingly. If empty (default), no playlist types filtering is applied when collecting listening sessions.
 
